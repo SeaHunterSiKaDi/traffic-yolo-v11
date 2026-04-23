@@ -1,5 +1,14 @@
 import streamlit as st
+import os
+
+# 告诉系统不要去寻找某些不存在的图形界面驱动
+os.environ["QT_QPA_PLATFORM"] = "offscreen"
+
 from ultralytics import YOLO
+import pandas as pd
+# ... 后面保持原样 ...
+
+
 
 st.title("系统环境自检中...")
 
